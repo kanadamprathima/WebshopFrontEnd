@@ -12,6 +12,15 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
+.navItem {
+  /* full width */
+  width: 100%;
+  /* Fixed height */
+  height: 60px;
+  background-color: #8568ff;
+  /* flex box */
+  display: flex;
+}
 
 .App-header {
   background-color: #282c34;
