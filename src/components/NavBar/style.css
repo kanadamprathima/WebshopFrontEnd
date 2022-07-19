@@ -1,0 +1,37 @@
+.navItem {
+  justify-content: center;
+  /* padding: 10px 90px; */
+}
+.logo {
+  padding: 10px 30px;
+}
+.leftbar {
+  margin-left: 60px;
+  /* background-color: antiquewhite; */
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  width: 60%;
+}
+.navItem > a {
+  font-size: 1.4rem;
+  margin: 0 10px;
+  color: black;
+  text-decoration: none;
+}
+
+.searchbar > input {
+  width: 317px;
+  height: 30px;
+  border-radius: 6px;
+}
+.rightbar {
+  /* background-color: beige; */
+  padding-left: 30px;
+  color: white;
+}
+svg {
+  width: 20px;
+  height: 20px;
+  margin: 0px 10px;
+}

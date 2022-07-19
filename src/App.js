@@ -4,15 +4,17 @@ import { Routes, Route } from "react-router-dom";
 import DetailsPage from "./Pages/DetailsPage/index";
 import HomePage from "./Pages/HomePage/index";
 import NavBar from "./components/NavBar/index";
+import ShopPage from "./Pages/ShopPage/index";
+//import "./my-sass.scss";
 
 function App() {
   return (
     <div className="App">
-      <h1>WEBSHOP PROJECT</h1>
       <NavBar className="navbar" />
       <Routes>
-        <Route path="/HomePage/index" element={<HomePage />} />
-        <Route path="/DetailsPage/index" element={<DetailsPage />} />
+        <Route path="/" element={<HomePage />} />
+        <Route path="/details:id" element={<DetailsPage />} />
+        <Route path="/shop" element={<ShopPage />} />
       </Routes>
     </div>
   );

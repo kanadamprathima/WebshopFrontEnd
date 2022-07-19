@@ -12,14 +12,16 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
-.navItem {
+.navbar-container {
   /* full width */
-  width: 100%;
+  width: 1920;
   /* Fixed height */
-  height: 60px;
+  height: 146;
   background-color: #8568ff;
   /* flex box */
+
   display: flex;
+  font-weight: bold;
 }
 
 .App-header {
