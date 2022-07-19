@@ -1,6 +1,7 @@
 import { NavLink } from "react-router-dom";
 
 const NavBar = () => {
+  console.log("Here");
   return (
     <div>
       <NavLink className="navItem" to="/HomePage/index">
