@@ -2,7 +2,6 @@ import axios from "axios";
 
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-//import NavBar from "./component/NavBar/index";
 
 const DetailsPage = () => {
   const [product, setProduct] = useState({});
@@ -13,7 +12,7 @@ const DetailsPage = () => {
     const product = await axios.get(
       `http://localhost:4000/products/${params.id}`
     );
-    console.log(product);
+    console.log.status(200).send(product);
     setProduct(product.data);
   };
   useEffect(() => {
@@ -22,9 +21,18 @@ const DetailsPage = () => {
 
   return (
     <div>
-      <p>{product.title}</p>
-      <p> {product.id} </p>
-      <p> {product.description} </p>
+      <div className="bigBanner"> text and image </div>
+      <div className="pageContent">
+        <div className="productCard">
+          <h1>product card</h1>
+          <p>{product.title}</p>
+          <p> {product.id} </p>
+          <p> {product.description} </p>
+          <p> {product.rating} </p>
+          <img src={product.mainimage} />
+        </div>
+        <div className="footer"> footer </div>
+      </div>
     </div>
   );
 };
