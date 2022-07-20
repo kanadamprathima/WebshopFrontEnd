@@ -1,0 +1,4 @@
+.bigBanner {
+  display: flex;
+  flex-direction: row;
+}
